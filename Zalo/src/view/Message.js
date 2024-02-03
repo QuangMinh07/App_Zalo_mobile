@@ -1,4 +1,11 @@
-import { View, Text, ScrollView, Image, ImageBackground } from "react-native";
+import {
+  View,
+  Text,
+  ScrollView,
+  Image,
+  ImageBackground,
+  Pressable,
+} from "react-native";
 import React, { useState, useEffect } from "react";
 import { MaterialIcons } from "@expo/vector-icons";
 import { FontAwesome6 } from "@expo/vector-icons";
@@ -40,45 +47,47 @@ export default function Message() {
         </View>
       </ImageBackground>
 
-      {data.map((item, index) => {
-        return (
-          <View
-            style={{
-              flexDirection: "row",
-              alignItems: "center",
-              marginTop: 20,
-            }}
-          >
-            <View>
-              <Image
-                src={item.image}
-                style={{
-                  width: 50,
-                  height: 50,
-                  marginLeft: 20,
-                  borderRadius: 90,
-                }}
-              ></Image>
-            </View>
-
+      <Pressable >
+        {data.map((item, index) => {
+          return (
             <View
               style={{
-                width: 300,
-                height: 60,
-                marginLeft: 20,
-                marginTop: 10,
+                flexDirection: "row",
+                alignItems: "center",
+                marginTop: 20,
               }}
             >
-              <Text style={{ fontSize: 20, fontWeight: "bold" }}>
-                {item.name}
-              </Text>
-              <Text style={{ fontSize: 20, fontWeight: 400 }}>
-                {item.description}
-              </Text>
+              <View>
+                <Image
+                  source={item.image}
+                  style={{
+                    width: 50,
+                    height: 50,
+                    marginLeft: 20,
+                    borderRadius: 90,
+                  }}
+                ></Image>
+              </View>
+
+              <View
+                style={{
+                  width: 300,
+                  height: 60,
+                  marginLeft: 20,
+                  marginTop: 10,
+                }}
+              >
+                <Text style={{ fontSize: 20, fontWeight: "bold" }}>
+                  {item.name}
+                </Text>
+                <Text style={{ fontSize: 20, fontWeight: 400 }}>
+                  {item.description}
+                </Text>
+              </View>
             </View>
-          </View>
-        );
-      })}
+          );
+        })}
+      </Pressable>
     </ScrollView>
   );
 }

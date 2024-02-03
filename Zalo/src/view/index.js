@@ -3,5 +3,17 @@ import Phonebook from "./Phonebook";
 import Discover from "./Discover";
 import Diary from "./Diary";
 import User from "./User";
+import Login from "./Login";
+import ScreenLogin from "./ScreenLogin";
+import ScreenRegister from "./ScreenRegister";
 
-export { Message, Phonebook, Discover, Diary, User };
+export {
+  Message,
+  Phonebook,
+  Discover,
+  Diary,
+  User,
+  Login,
+  ScreenLogin,
+  ScreenRegister,
+};
