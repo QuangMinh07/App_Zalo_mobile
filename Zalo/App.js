@@ -14,6 +14,7 @@ import {
   Login,
   ScreenLogin,
   ScreenRegister,
+  Setting,
 } from "./src/view";
 
 const Tab = createBottomTabNavigator();
@@ -142,6 +143,7 @@ export default function App() {
         <Stack.Screen name="User" component={User} />
         <Stack.Screen name="ScreenLogin" component={ScreenLogin} />
         <Stack.Screen name="ScreenRegister" component={ScreenRegister} />
+        <Stack.Screen name="Setting" component={Setting} />
       </Stack.Navigator>
     </NavigationContainer>
   );

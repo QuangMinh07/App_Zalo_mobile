@@ -6,7 +6,7 @@ import {
   ImageBackground,
   FlatList,
   StyleSheet,
-  TextInput
+  TextInput,
 } from "react-native";
 import React from "react";
 import { MaterialIcons } from "@expo/vector-icons";
@@ -76,17 +76,17 @@ export default function Discover() {
               style={{ width: 30, height: 30, marginLeft: 20 }}
             ></Image>
             <View style={{ marginLeft: 20, marginTop: 2 }}>
-            <TextInput
-            placeholder="Tìm kiếm"
-            style={{
-              width: 200,
-              fontSize: 18,
-              color:"white",
-              outlineStyle: "none",
-            }}
-          ></TextInput>
-          </View>
-            <View style={{ marginLeft: 220 }}>
+              <TextInput
+                placeholder="Tìm kiếm"
+                style={{
+                  width: 200,
+                  fontSize: 18,
+                  color: "white",
+                  outlineStyle: "none",
+                }}
+              ></TextInput>
+            </View>
+            <View style={{ marginLeft: 100 }}>
               <MaterialIcons name="qr-code-scanner" size={24} color="white" />
             </View>
           </View>

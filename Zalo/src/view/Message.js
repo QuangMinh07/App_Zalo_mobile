@@ -5,7 +5,7 @@ import {
   Image,
   ImageBackground,
   Pressable,
-  TextInput
+  TextInput,
 } from "react-native";
 import React, { useState, useEffect } from "react";
 import { MaterialIcons } from "@expo/vector-icons";
@@ -36,17 +36,17 @@ export default function Message() {
               style={{ width: 30, height: 30, marginLeft: 20 }}
             ></Image>
             <View style={{ marginLeft: 20, marginTop: 2 }}>
-            <TextInput
-            placeholder="Tìm kiếm"
-            style={{
-              width: 200,
-              fontSize: 18,
-              color:"white",
-              outlineStyle: "none",
-            }}
-          ></TextInput>
+              <TextInput
+                placeholder="Tìm kiếm"
+                style={{
+                  width: 200,
+                  fontSize: 18,
+                  color: "white",
+                  outlineStyle: "none",
+                }}
+              ></TextInput>
             </View>
-            <View style={{ marginLeft: 170 }}>
+            <View style={{ marginLeft: 60 }}>
               <MaterialIcons name="qr-code-scanner" size={24} color="white" />
             </View>
             <View style={{ marginLeft: 20 }}>
@@ -56,7 +56,7 @@ export default function Message() {
         </View>
       </ImageBackground>
 
-      <Pressable >
+      <Pressable>
         {data.map((item, index) => {
           return (
             <View
@@ -68,7 +68,7 @@ export default function Message() {
             >
               <View>
                 <Image
-                  source={item.image}
+                  src={item.image}
                   style={{
                     width: 50,
                     height: 50,

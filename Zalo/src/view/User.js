@@ -1,4 +1,12 @@
-import { View, Text, ScrollView, Image, ImageBackground, TextInput } from "react-native";
+import {
+  View,
+  Text,
+  ScrollView,
+  Image,
+  ImageBackground,
+  TextInput,
+  Pressable,
+} from "react-native";
 import React from "react";
 import { SimpleLineIcons } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
@@ -8,7 +16,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
 
-export default function User() {
+export default function User({ navigation }) {
   return (
     <ScrollView>
       <ImageBackground
@@ -22,19 +30,24 @@ export default function User() {
               style={{ width: 30, height: 30, marginLeft: 20 }}
             ></Image>
             <View style={{ marginLeft: 20, marginTop: 2 }}>
-            <TextInput
-            placeholder="Tìm kiếm"
-            style={{
-              width: 200,
-              fontSize: 18,
-              color:"white",
-              outlineStyle: "none",
-            }}
-          ></TextInput>
+              <TextInput
+                placeholder="Tìm kiếm"
+                style={{
+                  width: 200,
+                  fontSize: 18,
+                  color: "white",
+                  outlineStyle: "none",
+                }}
+              ></TextInput>
             </View>
-            <View style={{ marginLeft: 220 }}>
+            <Pressable
+              onPress={() => {
+                navigation.navigate("Setting");
+              }}
+              style={{ marginLeft: 100 }}
+            >
               <SimpleLineIcons name="settings" size={24} color="white" />
-            </View>
+            </Pressable>
           </View>
         </View>
       </ImageBackground>

@@ -6,6 +6,7 @@ import User from "./User";
 import Login from "./Login";
 import ScreenLogin from "./ScreenLogin";
 import ScreenRegister from "./ScreenRegister";
+import Setting from "./Setting";
 
 export {
   Message,
@@ -16,4 +17,5 @@ export {
   Login,
   ScreenLogin,
   ScreenRegister,
+  Setting,
 };

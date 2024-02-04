@@ -5,7 +5,7 @@ import {
   Image,
   ImageBackground,
   Pressable,
-  TextInput
+  TextInput,
 } from "react-native";
 import React from "react";
 import { Ionicons } from "@expo/vector-icons";
@@ -28,17 +28,17 @@ export default function Diary() {
               style={{ width: 30, height: 30, marginLeft: 20 }}
             ></Image>
             <View style={{ marginLeft: 20, marginTop: 2 }}>
-            <TextInput
-            placeholder="Tìm kiếm"
-            style={{
-              width: 200,
-              fontSize: 18,
-              color:"white",
-              outlineStyle: "none",
-            }}
-          ></TextInput>
+              <TextInput
+                placeholder="Tìm kiếm"
+                style={{
+                  width: 200,
+                  fontSize: 18,
+                  color: "white",
+                  outlineStyle: "none",
+                }}
+              ></TextInput>
             </View>
-            <View style={{ marginLeft: 170 }}>
+            <View style={{ marginLeft: 60 }}>
               <SimpleLineIcons name="note" size={24} color="white" />
             </View>
             <View style={{ marginLeft: 20 }}>
@@ -170,7 +170,6 @@ export default function Diary() {
           marginTop: 20,
         }}
       ></View>
-      
     </ScrollView>
   );
 }
