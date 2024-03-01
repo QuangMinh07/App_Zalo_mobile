@@ -38,6 +38,7 @@ export default function User({ navigation }) {
                   color: "white",
                   outlineStyle: "none",
                 }}
+                placeholderTextColor="white" // Đặt màu chữ của placeholder là trắng
               ></TextInput>
             </View>
             <Pressable

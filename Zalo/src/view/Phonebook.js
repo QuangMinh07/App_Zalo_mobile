@@ -600,6 +600,7 @@ export default function Phonebook() {
                   color: "white",
                   outlineStyle: "none",
                 }}
+                placeholderTextColor="white" // Đặt màu chữ của placeholder là trắng
               ></TextInput>
             </View>
             {/* Icon thêm bạn bè */}
