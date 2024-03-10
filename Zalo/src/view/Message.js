@@ -69,7 +69,7 @@ export default function Message() {
             >
               <View>
                 <Image
-                  src={item.image}
+                  source={item.image}
                   style={{
                     width: 50,
                     height: 50,
